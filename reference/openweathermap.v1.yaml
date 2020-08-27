@@ -69,11 +69,11 @@ paths:
                         example: AU
                       sunrise:
                         type: number
-                        description: '''Sunrise time, unix, UTC'''
+                        description: 'Sunrise time, unix, UTC'
                         example: 1435610796
                       sunset:
                         type: number
-                        description: '`Sunset time, unix, UTC`'
+                        description: 'Sunset time, unix, UTC'
                         example: 1435650870
                   dt:
                     type: string
@@ -114,7 +114,7 @@ paths:
                         example: 41.16
                       temp_min:
                         type: number
-                        description: '`Minimum temperature at the moment. This is deviation from current temp that is possible for large cities and megalopoises geographically expanded (use these parameters optionally). Unit Default: Kelvin, Metric: Celsius, IMperial: Fahrenheit.`'
+                        description: 'Minimum temperature at the moment. This is deviation from current temp that is possible for large cities and megalopoises geographically expanded (use these parameters optionally). Unit Default: Kelvin, Metric: Celsius, IMperial: Fahrenheit.'
                         example: 289.82
                       temp_max:
                         type: number
