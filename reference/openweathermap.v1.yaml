@@ -15,7 +15,107 @@ paths:
       summary: Weather
       tags:
         - Weather endpoints
-      responses: {}
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  '':
+                    type: string
+            application/xml:
+              schema:
+                type: object
+                properties:
+                  coord:
+                    type: object
+                    properties:
+                      lon:
+                        type: number
+                        description: 'City geo location, longitude'
+                        example: 145.77
+                      lat:
+                        type: number
+                        description: 'City geo location, latitude'
+                        example: -16.92
+                  cod:
+                    type: number
+                    description: Internal parameter
+                    example: 200
+                  name:
+                    type: string
+                    description: Name
+                    example: Jones
+                  id:
+                    type: string
+                    description: City ID
+                    example: '2172797'
+                  timezone:
+                    type: string
+                    description: The timezone for the station
+                    example: '-28800'
+                  sys:
+                    type: object
+                    properties:
+                      type:
+                        type: number
+                        description: Internal parameter
+                        example: '1'
+                      id:
+                        type: number
+                        description: Internal parameter
+                        example: 8166
+                      country:
+                        type: string
+                        description: '‘Country code (GB, JP etc.)’'
+                        example: AU
+                      sunrise:
+                        type: number
+                        description: '‘Sunrise time, unix, UTC’'
+                        example: 1435610796
+                      sunset:
+                        type: number
+                        description: '‘Sunset time, unix, UTC’'
+                        example: 1435650870
+                  dt:
+                    type: number
+                    description: '‘Time of data calculation, unix, UTC’'
+                    example: 1435658272
+                  clouds:
+                    type: object
+                    properties:
+                      all:
+                        type: number
+                        description: '‘Cloudiness, %’'
+                        example: '75'
+                  wind:
+                    type: object
+                    properties:
+                      speed:
+                        type: number
+                        description: '‘Wind speed. Unit Default: meter/sec, Metric: meter/sec, Imperial: miles/hour.’'
+                        example: 5.1
+                      deg:
+                        type: number
+                        description: '‘Wind direction, degrees (meteorological)’'
+                        example: 150
+                      visibility:
+                        type: number
+                        description: '‘Visibility, meter’'
+                        example: 16093
+                  main:
+                    type: object
+                    properties:
+                      temp:
+                        type: string
+                      feels_like:
+                        type: string
+                      temp_min:
+                        type: string
+                      temp_max:
+                        type: string
       operationId: get-weather
       description: 'Access current weather data for any location on Earth including over 200,000 cities! Current weather is frequently updated based on global models and data from more than 40,000 weather stations.'
       security:
