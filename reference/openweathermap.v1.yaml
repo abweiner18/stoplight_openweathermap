@@ -122,7 +122,7 @@ paths:
                         example: 295.37
                       pressure:
                         type: number
-                        description: 'Atmospheric pressure (on the sea level, if there is no sea\_level or grnd\_level data), hPa'
+                        description: 'Atmospheric pressure (on the sea level, if there is no sea\_level or grnd_level data), hPa'
                         example: 1019
                       humidity:
                         type: number
